@@ -1,0 +1,65 @@
+<div class="position-relative header " style="background-color: #343947;">
+    <div class="overlay ">
+      <nav class="navbar navbar-expand-lg px-4 pt-4">
+        <div class="container-fluid ">
+          <a class="navbar-brand" routerLink="/" 
+          [routerLinkActive]=" 'text-dark borbot' "
+         [routerLinkActiveOptions]="{ exact:true}"
+         (click)="isMenuCollapsed = true"
+         ><img class="img-fluid" src="assets/images/logo.png"></a>
+          <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+  
+          <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+            <ul class="navbar-nav pe-5">
+              <li class="nav-item active ">
+                <a class="nav-link " [routerLink]="'.'" 
+                
+                (click)="isMenuCollapsed = true">New Quiz</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Students</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Courses</a>
+              </li>
+              <ul class="navbar-nav ul3">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/About" 
+                  [routerLinkActive]=" 'text-dark borbot' "
+                 [routerLinkActiveOptions]="{ exact:true}"
+                 (click)="isMenuCollapsed = true" >About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/Contact" 
+                  [routerLinkActive]=" 'text-dark borbot' "
+                 [routerLinkActiveOptions]="{ exact:true}"
+                 (click)="isMenuCollapsed = true">Contact</a>
+                </li>
+               </ul>
+              <ul class="navbar-nav ul2">
+                <li class="nav-item ">
+                  <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Register</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Sign In</a>
+  
+                </li>
+              </ul>
+  
+              <ul class="navbar-nav  ">
+                <li class=" ">
+                  <button class="btn btnstart ms-5 px-3">Get Start </button>
+                </li>
+  
+              </ul>
+  
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div>
+    </div>
+  </div>
+  

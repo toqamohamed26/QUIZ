@@ -1,0 +1,139 @@
+<div class="position-relative header " style="background: url(assets/images/header.jpg);">
+  <div class="overlay ">
+    <nav class="navbar navbar-expand-lg px-4 pt-4">
+      <div class="container-fluid ">
+        <a class="navbar-brand" routerLink="/" 
+        [routerLinkActive]=" 'text-dark borbot' "
+       [routerLinkActiveOptions]="{ exact:true}"
+       (click)="isMenuCollapsed = true"
+       ><img class="img-fluid" src="assets/images/logo.png"></a>
+        <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+          <ul class="navbar-nav pe-5">
+            <li class="nav-item active ">
+              <a class="nav-link " [routerLink]="'.'" 
+              
+              (click)="isMenuCollapsed = true">New Quiz</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Students</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Courses</a>
+            </li>
+            <ul class="navbar-nav ul3">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/About" 
+                [routerLinkActive]=" 'text-dark borbot' "
+               [routerLinkActiveOptions]="{ exact:true}"
+               (click)="isMenuCollapsed = true" >About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/Contact" 
+                [routerLinkActive]=" 'text-dark borbot' "
+               [routerLinkActiveOptions]="{ exact:true}"
+               (click)="isMenuCollapsed = true">Contact</a>
+              </li>
+             </ul>
+            <ul class="navbar-nav ul2">
+              <li class="nav-item ">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Register</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Sign In</a>
+
+              </li>
+            </ul>
+
+            <ul class="navbar-nav  ">
+              <li class=" ">
+                <button class="btn btnstart ms-5 px-3">Get Start </button>
+              </li>
+
+            </ul>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <hr>
+    <div class="container content">
+      <h2 class="lead">
+        General Knowladge , Online mcq questions and answers | Practice & Get Help </h2>
+
+      <div class="d-flex mt-4 ">
+        <button class="btn btn-content me-2 p-2">All Courses &nbsp; &#8594; </button>
+        <button class="btn ms-5 create">
+          <i class="circle p-2 me-2 m-0 fa-solid fa-bolt-lightning text-center"></i>
+
+          Create Accout
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+
+</div>
+
+<div class="container section2">
+  <div class="row">
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-blue order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">Availbale Corses </h6>
+          <h2 class="text-right"><i class="fa-solid fa-award"></i><span>486</span></h2>
+          <p class="m-b-0">Completed <span class="f-right"> <i class="fa-solid fa-book fs-6"></i> 351</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-green order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">New Quiz</h6>
+          <h2 class="text-right"><i class="fa-solid fa-pen-to-square fs-4"></i><span> 35 </span></h2>
+          <p class="m-b-0">Join<span class="f-right"><i class="fa-solid fa-feather fs-6"></i> 20</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-yellow order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">Students List</h6>
+          <h2 class="text-right"><i class="fa-solid fa-person"></i><span> 200</span></h2>
+          <p class="m-b-0">Online now <span class="f-right">43 <i class="fa-solid fa-signal fs-6"></i></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-pink order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">Create Exam</h6>
+          <h2 class="text-right"><i class="fa-solid fa-chalkboard-user fs-5"></i><span> 10 </span></h2>
+          <p class="m-b-0">Only for Instructors<span class="f-right">10</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid ">
+  <hr>
+  <div class="row p-5 video ms-5">
+<div class="col-2 dot text-center pt-3">
+  <i class="fa-solid fa-play fs-4" ></i>
+</div>
+<div class="col-10 ps-5 w-50">
+  <h6 class="lead best">BEST COURSES</h6>
+  <p class="text-capitalize fs-2 lead">We always ensure best course quality and low learning curve.</p>
+</div>
+
+  </div>
+  <hr>
+</div>
